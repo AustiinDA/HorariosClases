@@ -46,7 +46,7 @@ class AdaptadorItems(items: List<Items>, itemClick: Recycler) : RecyclerView.Ada
 
         init {
             itemView.setOnClickListener {
-                
+
             }
         }
     }
