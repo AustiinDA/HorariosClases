@@ -9,9 +9,9 @@ import com.iessanalberto.dam2.horariosclases.adaptador.AdaptadorItems
 import com.iessanalberto.dam2.horariosclases.modelo.Items
 
 class Recycler : AppCompatActivity(), AdaptadorItems.RecyclerItemClick {
-
-    private val rvList: RecyclerView? = null
+    private lateinit var recycler: RecyclerView
     private lateinit var items: List<Items>
+    private lateinit var adapter: AdaptadorItems
 
     //Aqui irian los horarios
 
@@ -30,30 +30,24 @@ class Recycler : AppCompatActivity(), AdaptadorItems.RecyclerItemClick {
         return items
     }
 
-    override fun itemClick(item: Items) {
+     override fun itemClick(item: Items) {
         val intent = Intent(this, DetailActivity::class.java)
         intent.putExtra("itemDetail", item)
         startActivity(intent)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val recyclerView = findViewById<RecyclerView>(R.id.recycler)
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler)
 
+        recycler = findViewById(R.id.recycler)
+        val manager = LinearLayoutManager(this)
+        recycler.layoutManager = manager
+
         items = getItems()
-        val adaptadorI = AdaptadorItems(items, this)
-        recyclerView.adapter = adaptadorI
-        recyclerView.layoutManager = LinearLayoutManager(this)
-        /* adaptadorI.setOnItemClickListener(object : AdaptadorItems.ItemClickListener{
-             override fun onItemClick(position: Int) {
+        adapter = AdaptadorItems(items, this)
+        recycler.adapter = adapter
 
-                 Toast.makeText(this@Recycler,"Aqui abriria una  el horario y la descripción", Toast.LENGTH_SHORT).show()
-
-             }
-
-         })*/
 
     }
 
