@@ -19,7 +19,9 @@
             android:layout_weight="33.3"
             android:backgroundTint="#7CB342"
             android:text="aulas"
-            app:icon="@drawable/icons8_google_classroom_96"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_baseline_meeting_room_24"
+            app:iconSize="96dp"
             app:iconTintMode="multiply" />
 
         <Button
@@ -28,7 +30,9 @@
             android:layout_weight="33.3"
             android:backgroundTint="#00897B"
             android:text="Grupos"
-            app:icon="@drawable/icons8_member_96"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_baseline_groups_2_24"
+            app:iconSize="96dp"
             app:iconTintMode="multiply" />
 
         <Button
@@ -37,7 +41,9 @@
             android:layout_weight="33.3"
             android:backgroundTint="#3949AB"
             android:text="Profesores"
-            app:icon="@drawable/icons8_teacher_96"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_baseline_hail_24"
+            app:iconSize="96dp"
             app:iconTintMode="multiply" />
 
 
