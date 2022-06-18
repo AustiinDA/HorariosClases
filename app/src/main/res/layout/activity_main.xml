@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <Button
+            android:id="@+id/btnAulas"
+            style="@style/boton"
+            android:layout_weight="33.3"
+            android:backgroundTint="#7CB342"
+            android:text="aulas"
+            app:icon="@drawable/icons8_google_classroom_96"
+            app:iconTintMode="multiply" />
+
+        <Button
+            android:id="@+id/btnGrupos"
+            style="@style/boton"
+            android:layout_weight="33.3"
+            android:backgroundTint="#00897B"
+            android:text="Grupos"
+            app:icon="@drawable/icons8_member_96"
+            app:iconTintMode="multiply" />
+
+        <Button
+            android:id="@+id/btnProfe"
+            style="@style/boton"
+            android:layout_weight="33.3"
+            android:backgroundTint="#3949AB"
+            android:text="Profesores"
+            app:icon="@drawable/icons8_teacher_96"
+            app:iconTintMode="multiply" />
+
+
+    </LinearLayout>
+</LinearLayout>

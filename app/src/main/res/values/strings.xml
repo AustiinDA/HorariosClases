@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">HorariosClases</string>
+    <string-array name="aulas">
+        <item>Aula de Música</item>
+        <item>DAM1</item>
+        <item>DAM2</item>
+        <item>SMR1</item>
+        <item>SMR2</item>
+        <item>BCH1</item>
+        <item>BCH2</item>
+        <item>Aula Magna</item>
+        <item>Biblioteca</item>
+    </string-array>
+
+    <string-array name="localizacion">
+        <item>Primer Piso</item>
+        <item>Segundo Piso</item>
+        <item>Segundo Piso</item>
+        <item>Segundo Piso</item>
+        <item>Segundo Piso</item>
+        <item>Tercer Piso</item>
+        <item>Tercer Piso</item>
+        <item>Tercer Piso</item>
+        <item>Tercer Piso</item>
+    </string-array>
+
+    <string-array name="Profesores">
+        <item>Sandra Vela Pardos</item>
+        <item>Javier Fernández Lozano</item>
+        <item>Santiago García</item>
+        <item>Santiago Cierco Lasbats</item>
+        <item>Enrique Casado Álvarez</item>
+    </string-array>
+
+    <string-array name="Grupos">
+        <item>Primero A</item>
+        <item>Segundo B</item>
+        <item>Tercero A</item>
+        <item>Cuarto C</item>
+    </string-array>
+</resources>
