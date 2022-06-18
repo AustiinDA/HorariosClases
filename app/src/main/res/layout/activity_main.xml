@@ -18,7 +18,7 @@
             style="@style/boton"
             android:layout_weight="33.3"
             android:backgroundTint="#7CB342"
-            android:text="aulas"
+            android:text="Aulas"
             app:cornerRadius="10dp"
             app:icon="@drawable/ic_baseline_meeting_room_24"
             app:iconSize="96dp"
